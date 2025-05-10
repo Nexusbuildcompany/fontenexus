@@ -2,52 +2,89 @@
 <html lang="pt-PT">
 <head>
   <meta charset="UTF-8">
-  <title>Fonte Nexus</title>
+  <title>Fonte Nexus - Atualizado</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Página oficial da Fonte Nexus – descarregável, com apresentação do projeto e manual de utilização.">
+
   <style>
-    body {
-      background-color: #121212;
-      color: #f0f0f0;
-      font-family: 'Courier New', Courier, monospace;
-      text-align: center;
-      padding: 50px 20px;
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #333333; /* Alterado para um tom diferente */
+      color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+
+    header {
+      margin-bottom: 40px;
+      text-align: center;
     }
 
     h1 {
-      font-size: 36px;
-      margin-bottom: 40px;
-      color: #00ffff;
+      font-size: 2.5rem;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 60px;
     }
 
     .link {
-      display: block;
-      margin: 15px 0;
-      font-size: 20px;
-      color: #00ffff;
+      background-color: #444;
+      color: #ffffff;
       text-decoration: none;
-      transition: color 0.2s;
+      padding: 15px 20px;
+      border-radius: 8px;
+      font-size: 1rem;
+      text-align: center;
+      transition: background-color 0.3s, transform 0.2s;
+      border: 1px solid #555;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
 
-    .link:hover {
-      color: #ffffff;
+    .link:hover,
+    .link:focus {
+      background-color: #5e5e5e;
+      transform: translateY(-2px);
+      outline: none;
     }
 
     footer {
-      margin-top: 60px;
-      font-size: 14px;
-      color: #666;
+      font-size: 0.9rem;
+      color: #aaa;
+      text-align: center;
+      margin-top: auto;
     }
   </style>
 </head>
 <body>
 
-  <h1>Fonte Nexus</h1>
+  <header>
+    <h1>Fonte Nexus - Atualizado</h1>
+  </header>
 
-  <a class="link" href="fontes/nexus.ttf" download>📥 Descarregar Fonte (.ttf)</a>
-  <a class="link" href="apresentacao.html" target="_blank">📄 Apresentação do Projeto</a>
-  <a class="link" href="documentos/manual.pdf" target="_blank">📘 Manual de Utilização</a>
-  <a class="link" href="https://github.com/teu-utilizador/FonteNexus" target="_blank">🌐 Repositório GitHub</a>
+  <main class="links-container">
+    <a class="link" href="fontes/nexus.ttf" download>📥 Descarregar Fonte (.ttf)</a>
+    <a class="link" href="apresentacao.html" target="_blank" rel="noopener noreferrer">📄 Apresentação do Projeto</a>
+    <a class="link" href="documentos/manual.pdf" target="_blank" rel="noopener noreferrer">📘 Manual de Utilização</a>
+    <a class="link" href="https://github.com/teu-utilizador/FonteNexus" target="_blank" rel="noopener noreferrer">🌐 Repositório GitHub</a>
+  </main>
 
   <footer>
     &copy; 2025 Carlos Guilherme – Fonte Nexus
@@ -55,3 +92,4 @@
 
 </body>
 </html>
+
