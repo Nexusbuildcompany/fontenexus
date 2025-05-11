@@ -2,9 +2,11 @@
 <html lang="pt-PT">
 <head>
   <meta charset="UTF-8">
-  <title>Fonte Nexus - Atualizado</title>
+  <title>Fonte Nexus</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Página oficial da Fonte Nexus – descarregável, com apresentação do projeto e manual de utilização.">
+
+  <!-- Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/cc5a3c10e9.js" crossorigin="anonymous"></script>
 
   <style>
     * {
@@ -14,7 +16,7 @@
     }
 
     body {
-      background-color: #333333; /* Alterado para um tom diferente */
+      background-color: #2f2f2f; /* cinzento escuro */
       color: #f0f0f0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
@@ -22,7 +24,6 @@
       align-items: center;
       min-height: 100vh;
       padding: 40px 20px;
-      line-height: 1.6;
     }
 
     header {
@@ -32,7 +33,7 @@
 
     h1 {
       font-size: 2.5rem;
-      color: #ffffff;
+      color: #00ffff;
       margin-bottom: 10px;
     }
 
@@ -47,44 +48,43 @@
 
     .link {
       background-color: #444;
-      color: #ffffff;
+      color: #00ffff;
       text-decoration: none;
       padding: 15px 20px;
       border-radius: 8px;
       font-size: 1rem;
       text-align: center;
-      transition: background-color 0.3s, transform 0.2s;
-      border: 1px solid #555;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: background-color 0.3s, color 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
     }
 
-    .link:hover,
-    .link:focus {
-      background-color: #5e5e5e;
-      transform: translateY(-2px);
-      outline: none;
+    .link:hover {
+      background-color: #00ffff;
+      color: #121212;
     }
 
     footer {
       font-size: 0.9rem;
-      color: #aaa;
+      color: #999;
       text-align: center;
-      margin-top: auto;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Fonte Nexus - Atualizado</h1>
+    <h1>Fonte Nexus</h1>
   </header>
 
-  <main class="links-container">
-    <a class="link" href="fontes/nexus.ttf" download>📥 Descarregar Fonte (.ttf)</a>
-    <a class="link" href="apresentacao.html" target="_blank" rel="noopener noreferrer">📄 Apresentação do Projeto</a>
-    <a class="link" href="documentos/manual.pdf" target="_blank" rel="noopener noreferrer">📘 Manual de Utilização</a>
-    <a class="link" href="https://github.com/teu-utilizador/FonteNexus" target="_blank" rel="noopener noreferrer">🌐 Repositório GitHub</a>
-  </main>
+  <div class="links-container">
+    <a class="link" href="fontes/nexus.ttf" download><i class="fa-solid fa-download"></i>Descarregar Fonte (.ttf)</a>
+    <a class="link" href="apresentacao.html" target="_blank"><i class="fa-solid fa-file"></i>Apresentação do Projeto</a>
+    <a class="link" href="documentos/manual.pdf" target="_blank"><i class="fa-solid fa-book"></i>Manual de Utilização</a>
+    <a class="link" href="https://github.com/teu-utilizador/FonteNexus" target="_blank"><i class="fa-brands fa-github"></i>Repositório GitHub</a>
+  </div>
 
   <footer>
     &copy; 2025 Carlos Guilherme – Fonte Nexus
@@ -92,4 +92,3 @@
 
 </body>
 </html>
-
